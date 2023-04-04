@@ -13,9 +13,9 @@ import { MenuMobile } from "./MenuMobile"
 
 export function HomeMobile() {
   return (
-    <div className="flex flex-col items-center justify-between h-screen">
+    <div className="flex flex-col items-center justify-between max-h-screen">
       <header className="flex justify-between w-full px-10 py-5">
-        <img src={logoMobile} alt="Logo Rocket Coffee mobile"/>
+        <img src={logoMobile} alt="Logo Rocket Coffee mobile" />
 
       <Menu 
         styles={stylesMenu} 
@@ -32,7 +32,7 @@ export function HomeMobile() {
       </header>
      
 
-      <h1 className="text-center px-10 py-3 font-semibold text-3xl">
+      <h1 className="text-center px-10 py-5 font-semibold text-3xl">
         O café que fará seu código decolar para 
         o próximo nível.
       </h1>
@@ -41,7 +41,7 @@ export function HomeMobile() {
 
       <TitleMobile />
 
-      <img src={imgCoffee} alt="imagm de dois copos de café da Rocket Coffee"/>
+      <img src={imgCoffee} className="absolute bottom-0 w-full -z-10" alt="imagm de dois copos de café da Rocket Coffee"/>
       <img src={blur} className="absolute bottom-0 w-full -z-10"/>
 
     </div>
